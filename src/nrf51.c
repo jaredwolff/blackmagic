@@ -151,6 +151,7 @@ bool nrf51_probe(struct target_s *target)
 	case 0x0026:
 	case 0x004C:
 	case 0x0057:
+	case 0x0084:
 		target->driver = "Nordic nRF51";
 		target->xml_mem_map = nrf51_xml_memory_map;
 		target->flash_erase = nrf51_flash_erase;
